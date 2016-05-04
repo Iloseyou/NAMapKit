@@ -45,7 +45,9 @@ You can find a complete custom annotation example of multi-colored pins in [NAPi
 
 ####Circle popup menu
 You can custom a circle popup menu that like below image.
+
 ![Circle popup Animated Demo](Demo/Screenshots/namapkit2.gif)
+
 more details please reference `Demo\NAPinAnnotationsPopupMenuDemoViewController.m`
 
 #### Delegates
