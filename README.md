@@ -43,6 +43,24 @@ The implementation of `NADotAnnotation` places a red semi-transparent dot on the
 
 You can find a complete custom annotation example of multi-colored pins in [NAPinAnnotation.h](NAMapKit/NAPinAnnotation.h)/[.m](NAMapKit/NAPinAnnotation.m).
 
+####Circle popup menu with `NAPinAnnotation`
+You can custom a circle popup menu using below code:
+```
+    NAPinAnnotation * perth = [NAPinAnnotation annotationWithPoint:CGPointMake(63.0f, 379.0f)];
+    perth.title = @"Perth";
+    perth.menuStyle = POP_UP_MENU_STYLE_CIRCLE;
+    // the menu
+    perth.subTitleList = @[@"Menu 1", @"Menu 2", @"Menu 3", @"Menu 3"];
+```
+![Circle popup Animated Demo](Demo/Screenshots/namapkit2.gif)
+
+If you want to use image instead of text with the popup menu, you can also create a mapview that like `NAPinAnnotationMapView`, and then retrieve the menu button by below method, set the button's image that you like.
+```
+@interface NAPinAnnotationCircleCallOutView : UIView
+- (UIButton *)menuAtIndex:(NSInteger)index;
+@end
+```
+
 #### Delegates
 
 You can capture finger taps and zoom changes by registering a `mapViewDelegate` with the map. The delegate must implement the [NAMapViewDelegate](NAMapKit/NAMapViewDelegate.h) protocol.
