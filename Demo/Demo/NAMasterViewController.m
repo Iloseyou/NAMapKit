@@ -39,7 +39,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-#ifdef EXP_SHORTHAND
+#ifdef FB_REFERENCE_IMAGE_DIR
     return 6;
 #else
     return 7;
