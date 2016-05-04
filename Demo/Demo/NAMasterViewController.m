@@ -39,11 +39,19 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-#ifdef FB_REFERENCE_IMAGE_DIR
-    return 6;
-#else
-    return 7;
-#endif
+    if([self isRunningTests])
+    {
+        return 6;
+    }
+    else
+    {
+        return 7;
+    }
+}
+
+- (BOOL)isRunningTests
+{
+    return NSClassFromString(@"XCTest") != nil;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
