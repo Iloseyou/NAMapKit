@@ -1,3 +1,6 @@
+#### [3.2.2]
+
+* [#67](https://github.com/neilang/NAMapKit/pull/67) - Added an example that show circle popup menu when `NAPinAnnotation` selected - [@troyz](https://github.com/troyz).
 
 #### [3.2.1](https://github.com/neilang/NAMapKit/tree/v3.2.1) (4/7/2016)
 

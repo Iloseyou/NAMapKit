@@ -43,12 +43,9 @@ The implementation of `NADotAnnotation` places a red semi-transparent dot on the
 
 You can find a complete custom annotation example of multi-colored pins in [NAPinAnnotation.h](NAMapKit/NAPinAnnotation.h)/[.m](NAMapKit/NAPinAnnotation.m).
 
-####Circle popup menu
-You can custom a circle popup menu that like below image.
+You can find another custom annotation example of popup menus in [NAPinAnnotationsPopupMenuDemoViewController.h](Demo/Demo/NAPinAnnotationsPopupMenuDemoViewController.h)/[.m](Demo/Demo/NAPinAnnotationsPopupMenuDemoViewController.m). The screenshot is like below:
 
 ![Circle popup Animated Demo](Demo/Screenshots/namapkit2.gif)
-
-more details please reference `Demo\NAPinAnnotationsPopupMenuDemoViewController.m`
 
 #### Delegates
 
